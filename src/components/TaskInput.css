@@ -1,0 +1,39 @@
+/* src/components/TaskInput.css */
+.task-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 25px;
+}
+
+.task-input-item label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.task-input-item input {
+  padding: 8px;
+  border: none;
+  width: 250px;
+}
+
+.primaryBtn {
+  background-color: rgb(221, 25, 22);
+  color: white;
+  border: none;
+  border-radius: 0px;
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.primaryBtn:hover {
+  background-color: rgb(149, 21, 19);
+}

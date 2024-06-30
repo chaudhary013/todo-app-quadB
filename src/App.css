@@ -1,0 +1,61 @@
+/* src/App.css */
+@keyframes bgAnimation {
+  0% {
+    background-color: #0a0a0aec;
+  }
+
+  50% {
+    background-color: #494242;
+  }
+
+  100% {
+    background-color: #0a0a0aec;
+  }
+}
+
+body {
+  animation: bgAnimation 10s infinite alternate;
+}
+
+h1 {
+  text-align: center;
+}
+
+.todo-wrapper {
+  position: relative;
+  /* This ensures it layers above the animated background */
+  z-index: 1;
+  /* Bring it in front of the body background */
+  background: #353434;
+  padding: 3%;
+  width: 50%;
+  height: 60vh;
+  margin: 3% auto;
+  overflow-y: auto;
+  box-shadow: 0px 5px 7px rgb(27, 27, 27);
+  border-radius: 10px;
+}
+
+
+
+
+.todo-input,
+.btn-area,
+.todo-list {
+  margin-bottom: 25px;
+}
+
+.secondaryBtn {
+  background-color: rgb(20, 249, 238);
+  color: white;
+  border: none;
+  border-radius: 0px;
+  margin-top: 25px;
+  padding: 10px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.secondaryBtn.active {
+  background-color: rgb(221, 44, 44);
+}

@@ -1,0 +1,47 @@
+/* src/components/TaskList.css */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo-list-item {
+  background-color: #414040;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.todo-list-item h3 {
+  font-size: 18px;
+  color: rgb(0, 230, 230);
+  font-weight: bold;
+  margin: 0;
+}
+
+.todo-list-item p {
+  font-size: 14px;
+  color: rgb(161, 161, 161);
+  margin-top: 8px;
+}
+
+.icon,
+.check-icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: red;
+}
+
+.check-icon {
+  color: rgb(230, 0, 0);
+}
+
+.check-icon:hover {
+  color: rgb(4, 196, 196);
+}
